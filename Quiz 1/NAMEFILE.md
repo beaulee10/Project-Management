@@ -11,4 +11,5 @@ Neng Wam
 Jimmy Riedel    
 Jaida Duson   
 Lauren Marks   
-Reva Bathula    
+Reva Bathula  
+Beau Lee
