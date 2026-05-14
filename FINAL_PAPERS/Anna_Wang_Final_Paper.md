@@ -105,7 +105,9 @@ This agent demonstrates that social safety nets can be significantly strengthene
 
 ### References
 Thompson, M. (2011, April 6). How to Work Open. OpenMatt. https://openmatt.org/2011/04/06/how-to-work-open/
+
 One Degree - Connect with safety net resources. https://www.1degree.org/
+
 Watt, A. (2014). Project Management. BCcampus. https://opentextbc.ca/projectmanagement/
 
 
