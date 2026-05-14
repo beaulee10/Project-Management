@@ -1,0 +1,112 @@
+## Online Platform for Community Resources Using an AI Agent
+Anna Wang, Spring 2026 IS340
+
+### Abstract
+Managing a community resource database is a constant battle against keeping everything up-to-date. This online platform is a community-driven, open-source platform designed to automate the verification of directory updates while keeping human judgement at the center of this process. Currently, most organizations rely on a “refresh” process that requires thousands of hours of manual labor to check if a food bank is still open, or if a clinic still offers specific healthcare services. This project proposes an AI-driven agent to scrape the web and verify these details, presenting changes to human administrators through a transparent dashboard. By building this tool using “working open” principles, we can ensure that the automation of updates of public resources remains accountable, modular, and accessible to all communities. 
+
+### The Problem
+Community resource platforms often serve as the first point of contact for people in need of or in search for resources. When these directories/platforms contain outdated information–like wrong hours, dead links, or incorrect eligibility requirements–the consequence is more than just a minor inconvenience, it could mean a missed meal or a denied medical service. The current standard process for keeping this data fresh is manual verification, where volunteers and specialists visit every single resource website in the database and manually compare the website data to the stored information. Then, these individuals re-enter the information through specialized forms that require administrative approval. With tens of thousands of resources to manage, the current model struggles to scale without significant volunteer burnout or data inaccuracies. By transitioning to an open-source model, we leverage a decentralized meritocracy that ensures public visibility and collaborative effort to maintain these vital databases.
+
+### The Solution
+Integrating this AI resource agent is designed to act as an automated “first pass” for resource verification. It will not completely replace the human resource specialists, rather it will empower them and significantly reduce the turnaround time for updates, allowing for more frequent and accurate updates. The agent will process a list of resource IDs and attempt to find all specific data points that are displayed on the website, including:
+* Resource Identity: Name, description, and website URL
+* Accessibility and Legal: ADA accessibility, citizenship requirements, and eligibility criteria
+* Operational Details: Hours of operation, costs, and service areas
+After the agent scrapes the websites, it will generate “suggestions” that resource specialists will then review these suggestions, edit them if needed, and lastly push to the database. 
+
+### Technical Debt and Long-Term Sustainability
+In an open-source project of this scale, managing technical debt will be critical. Choosing a technical stack centered on LangChain, React, and FastAPI facilitates rapid deployment and modular growth, which in turn introduces debt by tying the project to third-party libraries and cloud services. Depending on these external tools means that major updates would necessitate an overhaul of specific modules.
+Integrating agentic AI also introduces unique challenges– AI tools are prone to hallucinations. This can build up significant debt over time, as the system may populate the database with errors that require manual cleanup. To minimize this initial debt, the project incorporates volunteers to skim the agent’s suggested changes before they are pushed to the PostgreSQL database, ensuring that only high-quality data is published.
+In a five-year window, the most anticipated source of debt will be version decay. Because AI technology and models are constantly evolving, initial scraping LLM prompts will require maintenance to remain compatible with new models. As older tools are retired, they might require multiple replacements to remain functional. Additionally, as the project scales to more resources, the sheer volume of data could cause slowdowns in platform responsiveness, leading to further rework of optimizations. Therefore, to sustain this large project, there will be regular refactoring sprints that focus on cleaning up the codebase, updating dependencies, and ensuring the original solutions are able to scale with the increasing complexity of the community resource ecosystem.
+
+### Technical Stack & Architecture
+To make this project “open,” the technical stack was curated for its readability and large community support, ensuring that a new developer can jump in and contribute without a massive learning curve. 
+
+#### Frontend
+* TypeScript: A strongly typed programming language built on JavaScript.
+* React: Component-based JavaScript library.
+* Vite: Frontend build tool for React.
+* Lucide: React icon component library (also necessary for designers).
+* TailwindCSS: User-friendly CSS framework.
+
+#### Backend
+* Python: A versatile, high-level programming language known for its readability and vast ecosystem.
+* FastAPI: A fast, modern Python web framework for building APIs with automatic docs.
+* Langchain: An open-source framework for building LLM-powered applications.
+* Python-socketio: A Python implementation of the Socket.IO protocol.
+
+#### Codebase
+The project’s GitHub repository serves as the central hub for the codebase, facilitating transparency and asynchronous collaboration through public access. It will contain the complete code structure and dependencies necessary for contributors to understand and build upon the system. By hosting the project in an open repository, the platform ensures that all edits undergo peer review via pull requests, maintaining code integrity and allowing multiple contributors to work on different features at the same time. The repository will also host all handoff documentation, ensuring that everything remains transparent and clear. 
+
+#### Infrastructure
+The infrastructure is designed for scalability and auditability, using Vercel for the deployment of the website and API. For data storage and accountability, Amazon S3 will be used to store log files, which creates a permanent audit trail of the agent’s verification runs. This setup allows the project to transition smoothly from development to a community-managed production environment, ensuring long-term sustainability and open access to the platform’s resources.
+
+### Design Methodology
+This project will utilize a comprehensive Figma-based design system. This will ensure that new designers can contribute while maintaining the existing visual library. There will be custom components, distinguishing between general-purpose elements and larger custom components used throughout the designs. Components will also be labeled with their respective states (hover, inactive, default) to guide developers in implementing interactive features. During handoff, clear labeling to the frames on Figma (“Designs - Final” and “Design System”) will foster an environment where the designer’s intent is not lost between contributors.
+A core principle of this project will also be the close collaboration between the design and engineering teams to ensure that the final product accurately reflects the intended vision. Developers will work in tandem with designers and the Project Manager to cross-check all implemented designs with their corresponding features as defined in the product requirements document (PRD). This is facilitated by comments on Figma that describe the organization and purpose of design elements, ensuring that the technical execution aligns with the branding kit. This integrated and collaborative design approach allows the team to maintain a cohesive design language while designing efficiently.
+
+### Project Management & Workflows
+This project will have a structured workflow that allows contributors to collaborate asynchronously, starting with the creation of a Product Requirements Document (PRD). The PRD is a foundational document, serving as the roadmap for the entire project, categorizing features into P0 (essential), P1 (important), and P2 (aspirational) categories.
+This project will use GitHub for version control, issue tracking, and community engagement. Tasks are organized into issues representing specific parts of work, such as improving documentation or fixing scraping logic. To manage progress, the project will use a Kanban-style board that organizes tasks into stages such as backlog, ready, in progress, in review, and done. Using a visual workflow helps contributors to track the status of tasks and how work flows through the development process.
+This iterative approach breaks large tasks into digestible units, allowing contributors to continuously complete and improve their work through a public feedback loop. Feedback will play a key role in this process, where contributors can comment on issues, suggest improvements, and peer-review work before it is finalized. This creates a feedback loop that improves overall quality.
+
+### Developmental Stages
+
+#### Priority 0 (P0): Foundation
+* Agent Deployment: Logic to retrieve resource data, return resource links, provide confidence scores for each suggestion.
+* Dashboard: Interface to start agent runs and view real-time log outputs.
+* Suggestions Logic: Generating a “suggestion” output for each resource, allowing specialists to view diffs and edit/approve changes.
+
+#### Priority 1 (P1): Administrative & User Growth
+* Admin Customization: Controls for admins to modify resource IDs and configure specific data fields for runs.
+* Audit Tools: Ability to view prior runs, including log outputs, run times, and historical suggestions.
+* User Management: Individual accounts for specialists and admins to claim their accounts via email invitations.
+
+#### Priority 2 (P2): Sustainability & Metrics
+* Performance Metrics: Tracking overall confidence scores and the total number of modified suggestions per run.
+* Refined Filtering: Dashboard-side filtering for specific resources to avoid manual database queries.
+* Flagging System: Users can flag suggestions for prioritized admin review.
+
+### Project Timeline
+This project will take around 6 months to complete, following the project lifecycle of define, design, develop, and production. The roadmap is structured as a sprint
+
+#### Month 1: Define and Survey (P0 focus)
+The goal of the first month will be to finalize the PRD and identify community needs. Similarly, user surveys will be used to identify which data fields are the most important for local resources, then the baseline project specs will be approved by the community.
+
+#### Month 2: Design & Specifications
+The goal of the second month will be to build the visual and architectural foundations. The Figma design system will be finalized, as well as the mapping of user workflows for the volunteers that will be working with this tool.
+
+#### Month 3 & 4: Development & Rapid Prototyping
+The goal of these months will be to build the core agent and the dashboard. Screen designs should be mostly finalized, which will allow developers to begin working on them. The LangChain logic will be implemented for scraping, and React for the front-end of the dashboard. There should be a rudimentary version of the agent capable of running an end-to-end cycle on a set of test resource IDs.
+
+#### Month 5: Quality Control & User Testing
+The goal of this month will be to ensure trust and reliability. Across meetings and feedback boards, the team will review agent accuracy and define edge cases. There will be a beta release that comes with forms for users to test the agent.
+
+#### Month 6: Production & Launch!
+The last month will be the handoff of this project to the community. After finalizing the Vercel deployment, setting up the S3 log storage, and creation of user accounts, there will be a full public launch.
+
+### Human-Centered Design: Building Trust
+As a UX designer, one of the main goals of this project is the moderation dashboard. The agent will not be able to automatically push changes to a published database, rather this system will require administrators to approve changes. Therefore, the entire user flow of this dashboard will be centered around the volunteers and admins. 
+
+#### The “Suggestion” Interface
+When the agent finds a change, it will generate a suggestion. The UI allows specialists to see a side-by-side comparison of the “current” vs. “suggested” data (diff view), view the exact URL where the agent found the information, and correct the agent’s work before pushing the final update to the database.
+
+#### Confidence Metrics
+The agent will provide a confidence score for every field. Low-confidence scores are automatically flagged and moved to the top of the specialist's review queue, which ensures that a specialist sees the most “risky” or complex data points first. 
+
+### Working Open
+The project will adhere to three principles when it comes to working open. This will ensure that not just the code, but also the process will be public as this project is community driven.
+1. Transparency will be maintained through the public sharing of documentation, progress reports, and newsletters. We will maintain public progress reports, utilize discourse forums, and provide easily accessible documentation through platforms like ReadtheDocs.
+2.  With the use of GitHub, we will coordinate contributions from across the globe and have an interactive roadmap that is visible to all. This lowers the barrier of entry, allowing developers to fork the repository, propose changes, and participate in the growth of the agent.
+3. The project will foster an inclusive environment through regular sprints and side activities, with the use of forums to establish trust levels among contributors. This approach ensures that the  project remains a community-first ecosystem.
+
+### Conclusion
+This agent demonstrates that social safety nets can be significantly strengthened by using both automated verification with open-source principles. By automating tedious, repetitive manual tasks while still keeping human experts in the heart of the process, this project provides a scalable solution to the persistent problem of data decay in vast directories. Ultimately, working open ensures that the project remains a transparent, collaboratively governed ecosystem that will empower communities to maintain their safety nets with accuracy.
+
+### References
+Thompson, M. (2011, April 6). How to Work Open. OpenMatt. https://openmatt.org/2011/04/06/how-to-work-open/
+One Degree - Connect with safety net resources. https://www.1degree.org/
+Watt, A. (2014). Project Management. BCcampus. https://opentextbc.ca/projectmanagement/
+
+
+
