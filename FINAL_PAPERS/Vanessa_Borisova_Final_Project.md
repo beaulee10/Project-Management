@@ -63,6 +63,9 @@ The design phase also includes accessibility considerations such as readable typ
 
 Early sketches and wireframes were created during the design phase to help visualize the layout, navigation structure, and functionality of the sustainability closet application before development began. These sketches helped contributors organize interface elements and identify usability improvements early in the project lifecycle. 
 
+| ![](https://github.com/OREL-group/Project-Management/commit/f19ed5e6cea80e98835cc57e0595d54d6b44ebde#diff-cb01595b6165c58bae8c693c5a743f17d9b9ccf204fbfdf7ed655801c9c93105) |
+| :--: |
+
 ### Phase 3: Development
 
 The development phase involves building the actual application features and systems. Since the project is open-source, contributors may work on different components simultaneously using collaborative development tools.
