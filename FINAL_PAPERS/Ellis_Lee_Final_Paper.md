@@ -63,4 +63,4 @@ I will measure success based on several key indicators:
 * High satisfaction scores from users and contributors.
 
 ## Agile Workflow (MERN Stack)
-My development process utilizes an Agile workflow, specifically tailored for the MERN (MongoDB, Express
+My development process utilizes an Agile workflow, specifically tailored for the MERN (MongoDB,Express.js, React, Node.js) stack.
