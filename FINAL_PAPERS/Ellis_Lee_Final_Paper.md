@@ -1,10 +1,10 @@
 # Final Paper: Open Workflow MVP
 
 ## Project Vision
-[cite_start]The core idea behind the Open Workflow MVP is to transform disorganized, hard-to-manage problems into a clear, repeatable workflow[cite: 3]. This project has both immediate and long-term objectives. [cite_start]In the short term, I aim to deliver a Minimum Viable Product, or MVP, which includes essential features, thorough documentation, and a transparent system for version control[cite: 4]. [cite_start]Looking further ahead, my goal is for this project to evolve into a lasting, "working open" resource[cite: 5]. [cite_start]This means it should be easily reusable, adaptable through forking, and expandable, all while maintaining trust and clarity within the collaborative environment[cite: 6].
+The core idea behind the Open Workflow MVP is to transform disorganized, hard-to-manage problems into a clear, repeatable workflow[cite: 3]. This project has both immediate and long-term objectives. [cite_start]In the short term, I aim to deliver a Minimum Viable Product, or MVP, which includes essential features, thorough documentation, and a transparent system for version control[cite: 4]. [cite_start]Looking further ahead, my goal is for this project to evolve into a lasting, "working open" resource[cite: 5]. [cite_start]This means it should be easily reusable, adaptable through forking, and expandable, all while maintaining trust and clarity within the collaborative environment[cite: 6].
 
 ## The Collaboration Problem
-[cite_start]Many teams face significant challenges when working together, leading to inefficiencies and frustration[cite: 8]. These issues often stem from several key areas:
+Many teams face significant challenges when working together, leading to inefficiencies and frustration[cite: 8]. These issues often stem from several key areas:
 
 * [cite_start]**Scattered Tools**: Team members frequently struggle to keep track of tasks, decisions, and important files because they are spread across various platforms and applications[cite: 10]. [cite_start]This fragmentation makes it difficult to maintain a unified project overview[cite: 11].
 * [cite_start]**Onboarding Friction**: New collaborators often find it hard to quickly understand the current status of a project or how they can effectively contribute[cite: 12]. [cite_start]The lack of a clear entry point or consolidated information slows down their integration into the team[cite: 13].
