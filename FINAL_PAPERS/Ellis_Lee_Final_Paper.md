@@ -1,36 +1,36 @@
 # Final Paper: Open Workflow MVP
 
 ## Project Vision
-The core idea behind the Open Workflow MVP is to transform disorganized, hard-to-manage problems into a clear, repeatable workflow[cite: 3]. This project has both immediate and long-term objectives. [cite_start]In the short term, I aim to deliver a Minimum Viable Product, or MVP, which includes essential features, thorough documentation, and a transparent system for version control[cite: 4]. [cite_start]Looking further ahead, my goal is for this project to evolve into a lasting, "working open" resource[cite: 5]. [cite_start]This means it should be easily reusable, adaptable through forking, and expandable, all while maintaining trust and clarity within the collaborative environment[cite: 6].
+The core idea behind the Open Workflow MVP is to transform disorganized, hard-to-manage problems into a clear, repeatable workflow. This project has both immediate and long-term objectives. In the short term, I aim to deliver a Minimum Viable Product, or MVP, which includes essential features, thorough documentation, and a transparent system for version control. Looking further ahead, my goal is for this project to evolve into a lasting, "working open" resource. This means it should be easily reusable, adaptable through forking, and expandable, all while maintaining trust and clarity within the collaborative environment.
 
 ## The Collaboration Problem
-Many teams face significant challenges when working together, leading to inefficiencies and frustration[cite: 8]. These issues often stem from several key areas:
+Many teams face significant challenges when working together, leading to inefficiencies and frustration. These issues often stem from several key areas:
 
-* [cite_start]**Scattered Tools**: Team members frequently struggle to keep track of tasks, decisions, and important files because they are spread across various platforms and applications[cite: 10]. [cite_start]This fragmentation makes it difficult to maintain a unified project overview[cite: 11].
-* [cite_start]**Onboarding Friction**: New collaborators often find it hard to quickly understand the current status of a project or how they can effectively contribute[cite: 12]. [cite_start]The lack of a clear entry point or consolidated information slows down their integration into the team[cite: 13].
-* [cite_start]**Weak Institutional Memory**: Meeting notes and critical decisions are often difficult to locate later, resulting in a poor institutional memory[cite: 14]. [cite_start]This can lead to repeated discussions, lost insights, and a general lack of historical context for ongoing work[cite: 15].
-* [cite_start]**Imbalanced Effort**: Work distribution can become uneven because the ownership of tasks and project timelines are frequently unclear[cite: 16]. [cite_start]This ambiguity can cause some team members to be overloaded while others are underutilized, impacting overall team morale and productivity[cite: 17].
+* **Scattered Tools**: Team members frequently struggle to keep track of tasks, decisions, and important files because they are spread across various platforms and applications[cite: 10]. [cite_start]This fragmentation makes it difficult to maintain a unified project overview.
+* **Onboarding Friction**: New collaborators often find it hard to quickly understand the current status of a project or how they can effectively contribute. The lack of a clear entry point or consolidated information slows down their integration into the team.
+* **Weak Institutional Memory**: Meeting notes and critical decisions are often difficult to locate later, resulting in a poor institutional memory. his can lead to repeated discussions, lost insights, and a general lack of historical context for ongoing work.
+* **Imbalanced Effort**: Work distribution can become uneven because the ownership of tasks and project timelines are frequently unclear. This ambiguity can cause some team members to be overloaded while others are underutilized, impacting overall team morale and productivity.
 
 ## The Solution and Unique Value Proposition
-[cite_start]My project offers a practical solution to these collaboration problems with a distinct value proposition[cite: 19]:
+My project offers a practical solution to these collaboration problems with a distinct value proposition:
 
 ### The MVP Solution
-[cite_start]The MVP provides a comprehensive toolkit designed to streamline collaboration[cite: 21]:
-* [cite_start]A GitHub repository template that comes pre-configured with issues, milestones, and a Kanban board for task management[cite: 22].
-* [cite_start]Ready-to-use templates for meeting notes, weekly status updates, and decision logs, ensuring consistent documentation[cite: 23].
-* [cite_start]A clear contribution guide and an onboarding checklist to help newcomers get up to speed quickly and effectively[cite: 24].
-* [cite_start]A script for generating weekly summaries directly from GitHub issues and pull requests, automating progress reporting[cite: 25].
+The MVP provides a comprehensive toolkit designed to streamline collaboration:
+* A GitHub repository template that comes pre-configured with issues, milestones, and a Kanban board for task management.
+* Ready-to-use templates for meeting notes, weekly status updates, and decision logs, ensuring consistent documentation.
+* A clear contribution guide and an onboarding checklist to help newcomers get up to speed quickly and effectively.
+* A script for generating weekly summaries directly from GitHub issues and pull requests, automating progress reporting.
 
 ### Unique Value Proposition
-[cite_start]My unique value proposition lies in offering a "plug and play," open-by-default workflow kit[cite: 27]. [cite_start]This kit is specifically designed to transform messy, uncoordinated collaboration into a predictable and repeatable system, making it easier for teams to work together efficiently[cite: 28].
+My unique value proposition lies in offering a "plug and play," open-by-default workflow kit. This kit is specifically designed to transform messy, uncoordinated collaboration into a predictable and repeatable system, making it easier for teams to work together efficiently.
 
 ## Target Audience and Acquisition Channels
-[cite_start]Understanding who will benefit most from this project and how to reach them is crucial for its success[cite: 30].
+Understanding who will benefit most from this project and how to reach them is crucial for its success.
 
 ### Target Audience
-* [cite_start]**Primary Audience**: My main focus is on student project teams and small remote research groups who often need structured collaboration tools[cite: 32].
-* [cite_start]**Early Adopters**: I anticipate early adoption from classmates in IS 340 and various campus clubs that engage in project-based work[cite: 33].
-* [cite_start]**Secondary Audience**: Over time, I aim to attract newcomers to open-source projects who are looking for a more structured and guided way to contribute[cite: 34].
+* **Primary Audience**: My main focus is on student project teams and small remote research groups who often need structured collaboration tools.
+* **Early Adopters**: I anticipate early adoption from classmates in IS 340 and various campus clubs that engage in project-based work.
+***Secondary Audience**: Over time, I aim to attract newcomers to open-source projects who are looking for a more structured and guided way to contribute.
 
 ### Growth Channels
 [cite_start]I plan to reach our target audience through several effective channels[cite: 36]:
