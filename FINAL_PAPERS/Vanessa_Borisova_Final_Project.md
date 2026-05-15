@@ -63,7 +63,7 @@ The design phase also includes accessibility considerations such as readable typ
 
 Early sketches and wireframes were created during the design phase to help visualize the layout, navigation structure, and functionality of the sustainability closet application before development began. These sketches helped contributors organize interface elements and identify usability improvements early in the project lifecycle. 
 
-| ![](https://github.com/OREL-group/Project-Management/commit/f19ed5e6cea80e98835cc57e0595d54d6b44ebde#diff-cb01595b6165c58bae8c693c5a743f17d9b9ccf204fbfdf7ed655801c9c93105) |
+| ![](https://raw.githubusercontent.com/OREL-group/Project-Management/f19ed5e6cea80e98835cc57e0595d54d6b44ebde/FINAL_PAPERS/Screenshot%202026-05-11%20132045.png) |
 | :--: |
 
 ### Phase 3: Development
